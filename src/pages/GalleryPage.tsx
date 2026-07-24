@@ -21,7 +21,7 @@ export default function GalleryPage() {
           모바일 청첩장 템플릿
         </h1>
         <p className="text-sm text-neutral-500">
-          마음에 드는 템플릿을 골라 나만의 청첩장을 만들어보세요.
+          마음에 드는 템플릿을 둘러보고, 제작을 문의해보세요.
         </p>
       </div>
       <CategoryTabs value={category} onChange={setCategory} />

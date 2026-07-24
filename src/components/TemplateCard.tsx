@@ -9,9 +9,11 @@ export default function TemplateCard({ template }: { template: Template }) {
       className="group block overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
     >
       <div
-        className="relative flex aspect-[3/4] items-center justify-center"
+        className="relative flex aspect-[3/4] items-center justify-center bg-cover bg-center"
         style={{
-          background: `linear-gradient(160deg, ${template.colorFrom}, ${template.colorTo})`,
+          backgroundImage: template.thumbnail
+            ? `url(${template.thumbnail})`
+            : `linear-gradient(160deg, ${template.colorFrom}, ${template.colorTo})`,
         }}
       >
         <div className="absolute left-2 top-2 flex gap-1">

@@ -12,6 +12,7 @@ export interface Template {
   description: string
   colorFrom: string
   colorTo: string
+  thumbnail?: string
   isNew?: boolean
   isPopular?: boolean
   price: number

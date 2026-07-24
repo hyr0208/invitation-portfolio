@@ -1,6 +1,8 @@
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { CATEGORY_LABEL } from '../types/template'
 import { templates } from '../data/templates'
+import { hasLiveDemo } from '../templates/registry'
+import { CONTACT_EMAIL } from '../config'
 
 export default function TemplateDetailPage() {
   const { id } = useParams<{ id: string }>()
@@ -10,25 +12,43 @@ export default function TemplateDetailPage() {
     return <Navigate to="/" replace />
   }
 
+  const inquiryMailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+    `[청첩장 템플릿 문의] ${template.title}`,
+  )}&body=${encodeURIComponent(
+    `안녕하세요, "${template.title}" 템플릿으로 제작 문의드립니다.\n\n결혼식 날짜:\n예식장:\n연락처:`,
+  )}`
+
+  const liveDemo = hasLiveDemo(template.id)
+
   return (
     <div className="grid gap-8 md:grid-cols-2 md:items-start">
       <div className="mx-auto w-full max-w-xs">
         <div className="rounded-[2.5rem] border-8 border-neutral-900 bg-neutral-900 shadow-xl">
-          <div
-            className="flex aspect-9/19 flex-col items-center justify-center gap-2 overflow-hidden rounded-[1.75rem] px-6 text-center"
-            style={{
-              background: `linear-gradient(160deg, ${template.colorFrom}, ${template.colorTo})`,
-            }}
-          >
-            <p className="text-xs tracking-widest text-white/80">
-              WEDDING INVITATION
-            </p>
-            <h2 className="text-lg font-semibold text-white">
-              {template.title}
-            </h2>
-            <p className="text-xs text-white/80">
-              {CATEGORY_LABEL[template.category]} 컨셉
-            </p>
+          <div className="aspect-9/19 overflow-hidden rounded-[1.75rem] bg-white">
+            {liveDemo ? (
+              <iframe
+                src={`/preview/${template.id}`}
+                title={template.title}
+                className="h-full w-full border-0"
+              />
+            ) : (
+              <div
+                className="flex h-full flex-col items-center justify-center gap-2 px-6 text-center"
+                style={{
+                  background: `linear-gradient(160deg, ${template.colorFrom}, ${template.colorTo})`,
+                }}
+              >
+                <p className="text-xs tracking-widest text-white/80">
+                  WEDDING INVITATION
+                </p>
+                <h2 className="text-lg font-semibold text-white">
+                  {template.title}
+                </h2>
+                <p className="text-xs text-white/80">
+                  {CATEGORY_LABEL[template.category]} 컨셉
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -52,12 +72,22 @@ export default function TemplateDetailPage() {
           {template.price === 0 ? '무료' : `${template.price.toLocaleString()}원`}
         </p>
         <div className="flex gap-2">
-          <button
-            type="button"
-            className="flex-1 rounded-xl bg-neutral-900 py-3 text-sm font-medium text-white transition hover:bg-neutral-800"
+          <a
+            href={inquiryMailto}
+            className="flex-1 rounded-xl bg-neutral-900 py-3 text-center text-sm font-medium text-white transition hover:bg-neutral-800"
           >
-            이 템플릿으로 만들기
-          </button>
+            제작 문의하기
+          </a>
+          {liveDemo && (
+            <a
+              href={`/preview/${template.id}`}
+              target="_blank"
+              rel="noreferrer"
+              className="flex-1 rounded-xl border border-stone-300 py-3 text-center text-sm font-medium text-neutral-700 transition hover:border-neutral-400"
+            >
+              새 탭에서 크게 보기
+            </a>
+          )}
         </div>
       </div>
     </div>

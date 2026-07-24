@@ -1,4 +1,5 @@
 import type { Template } from '../types/template'
+import classicStoryThumb from '../templates/classic-story/assets/photos/cover-bg.jpg'
 
 export const templates: Template[] = [
   {
@@ -39,6 +40,18 @@ export const templates: Template[] = [
     colorTo: '#2c3e6b',
     isPopular: true,
     price: 15000,
+  },
+  {
+    id: 'classic-story',
+    title: '클래식 스토리',
+    category: 'classic',
+    description:
+      '내추럴 크림톤과 세리프 타이포로 완성한 정갈한 스토리텔링형 청첩장. 실제 컴포넌트로 만들어진 라이브 데모입니다.',
+    colorFrom: '#efe4d2',
+    colorTo: '#bd7355',
+    thumbnail: classicStoryThumb,
+    isPopular: true,
+    price: 0,
   },
   {
     id: 'romantic-01',

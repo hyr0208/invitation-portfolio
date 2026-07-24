@@ -1,8 +1,60 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: 'Pretendard', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', sans-serif;
   --font-serif: ui-serif, Georgia, 'Times New Roman', serif;
+
+  /* classic-story template tokens */
+  --color-cream: #fbf6ef;
+  --color-cream-soft: #f6efe3;
+  --color-cream-deep: #efe4d2;
+  --color-ink: #3a332c;
+  --color-ink-soft: #8a7f73;
+  --color-ink-faint: #b7ada0;
+  --color-terracotta: #bd7355;
+  --color-terracotta-dark: #9c5b41;
+  --color-terracotta-soft: #e9d4c6;
+  --color-sage: #8a9a80;
+  --color-line: #e4d9c8;
+
+  --font-serif-kr: 'Noto Serif KR', serif;
+  --font-serif-en: 'Cormorant Garamond', serif;
+
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  --animate-fade-in: fade-in 0.25s ease-out forwards;
+  --animate-scale-in: scale-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.94);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 }
 
 body {
