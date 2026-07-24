@@ -14,6 +14,7 @@ export default function TemplateCard({ template }: { template: Template }) {
           backgroundImage: template.thumbnail
             ? `url(${template.thumbnail})`
             : `linear-gradient(160deg, ${template.colorFrom}, ${template.colorTo})`,
+          filter: template.thumbnailFilter,
         }}
       >
         <div className="absolute left-2 top-2 flex gap-1">

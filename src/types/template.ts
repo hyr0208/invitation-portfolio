@@ -13,6 +13,7 @@ export interface Template {
   colorFrom: string
   colorTo: string
   thumbnail?: string
+  thumbnailFilter?: string
   isNew?: boolean
   isPopular?: boolean
   price: number

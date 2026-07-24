@@ -26,6 +26,7 @@ npm run dev
 현재 라이브 템플릿:
 
 - `classic-story` — 내추럴 크림톤 + 세리프 타이포의 스토리텔링형 청첩장 (`src/templates/classic-story`)
+- `minimal-mono` — 그레이스케일 사진과 좌측 정렬 에디토리얼 타이포그래피로 완성한 블랙앤화이트 미니멀 청첩장 (`src/templates/minimal-mono`)
 
 새 라이브 템플릿을 추가하려면:
 

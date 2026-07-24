@@ -1,5 +1,6 @@
 import type { Template } from '../types/template'
 import classicStoryThumb from '../templates/classic-story/assets/photos/cover-bg.jpg'
+import minimalMonoThumb from '../templates/minimal-mono/assets/photos/cover-bg.jpg'
 
 export const templates: Template[] = [
   {
@@ -21,6 +22,19 @@ export const templates: Template[] = [
     colorTo: '#e0c9a6',
     isNew: true,
     price: 9900,
+  },
+  {
+    id: 'minimal-mono',
+    title: '미니멀 모노톤',
+    category: 'minimal',
+    description:
+      '그레이스케일 사진과 굵은 타이포그래피, 좌측 정렬 레이아웃으로 완성한 에디토리얼한 블랙앤화이트 청첩장. 실제 컴포넌트로 만들어진 라이브 데모입니다.',
+    colorFrom: '#fafafa',
+    colorTo: '#171717',
+    thumbnail: minimalMonoThumb,
+    thumbnailFilter: 'grayscale(1) contrast(1.15)',
+    isNew: true,
+    price: 0,
   },
   {
     id: 'classic-01',
