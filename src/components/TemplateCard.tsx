@@ -6,7 +6,7 @@ export default function TemplateCard({ template }: { template: Template }) {
   return (
     <Link
       to={`/templates/${template.id}`}
-      className="group block overflow-hidden rounded-2xl border border-rose-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+      className="group block overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
     >
       <div
         className="relative flex aspect-[3/4] items-center justify-center"
@@ -16,12 +16,12 @@ export default function TemplateCard({ template }: { template: Template }) {
       >
         <div className="absolute left-2 top-2 flex gap-1">
           {template.isNew && (
-            <span className="rounded-full bg-white/90 px-2 py-0.5 text-xs font-medium text-rose-500">
+            <span className="rounded-full bg-white/90 px-2 py-0.5 text-xs font-medium text-amber-700">
               NEW
             </span>
           )}
           {template.isPopular && (
-            <span className="rounded-full bg-rose-500/90 px-2 py-0.5 text-xs font-medium text-white">
+            <span className="rounded-full bg-neutral-900/90 px-2 py-0.5 text-xs font-medium text-white">
               인기
             </span>
           )}

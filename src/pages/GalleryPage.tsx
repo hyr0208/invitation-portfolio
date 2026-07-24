@@ -17,7 +17,7 @@ export default function GalleryPage() {
   return (
     <div className="space-y-4">
       <div className="space-y-1 text-center">
-        <h1 className="text-xl font-semibold text-neutral-800">
+        <h1 className="font-serif text-3xl tracking-wide text-neutral-900">
           모바일 청첩장 템플릿
         </h1>
         <p className="text-sm text-neutral-500">

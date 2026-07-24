@@ -2,8 +2,9 @@
 
 @theme {
   --font-sans: 'Pretendard', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: ui-serif, Georgia, 'Times New Roman', serif;
 }
 
 body {
-  @apply bg-rose-50 text-neutral-800 antialiased;
+  @apply bg-stone-50 text-neutral-800 antialiased;
 }

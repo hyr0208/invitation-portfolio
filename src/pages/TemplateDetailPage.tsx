@@ -34,14 +34,14 @@ export default function TemplateDetailPage() {
       </div>
 
       <div className="space-y-4">
-        <Link to="/" className="text-sm text-rose-500 hover:underline">
+        <Link to="/" className="text-sm text-neutral-500 hover:text-neutral-900 hover:underline">
           ← 목록으로 돌아가기
         </Link>
         <div>
-          <span className="rounded-full bg-rose-100 px-2 py-0.5 text-xs font-medium text-rose-500">
+          <span className="rounded-full border border-stone-300 px-2 py-0.5 text-xs font-medium text-neutral-600">
             {CATEGORY_LABEL[template.category]}
           </span>
-          <h1 className="mt-2 text-2xl font-semibold text-neutral-800">
+          <h1 className="mt-2 font-serif text-3xl tracking-wide text-neutral-900">
             {template.title}
           </h1>
           <p className="mt-2 text-sm leading-relaxed text-neutral-600">
@@ -54,7 +54,7 @@ export default function TemplateDetailPage() {
         <div className="flex gap-2">
           <button
             type="button"
-            className="flex-1 rounded-xl bg-rose-500 py-3 text-sm font-medium text-white transition hover:bg-rose-600"
+            className="flex-1 rounded-xl bg-neutral-900 py-3 text-sm font-medium text-white transition hover:bg-neutral-800"
           >
             이 템플릿으로 만들기
           </button>

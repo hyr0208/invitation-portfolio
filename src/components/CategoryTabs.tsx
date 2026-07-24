@@ -27,10 +27,10 @@ export default function CategoryTabs({
             key={category}
             type="button"
             onClick={() => onChange(category)}
-            className={`shrink-0 rounded-full px-4 py-1.5 text-sm font-medium transition ${
+            className={`shrink-0 rounded-full border px-4 py-1.5 text-sm font-medium transition ${
               isActive
-                ? 'bg-rose-500 text-white'
-                : 'bg-white text-neutral-600 hover:bg-rose-100'
+                ? 'border-neutral-900 bg-neutral-900 text-white'
+                : 'border-stone-200 bg-white text-neutral-600 hover:border-neutral-400'
             }`}
           >
             {category === 'all' ? '전체' : CATEGORY_LABEL[category]}
