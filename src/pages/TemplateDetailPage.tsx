@@ -1,22 +1,18 @@
+import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { CATEGORY_LABEL } from '../types/template'
 import { templates } from '../data/templates'
 import { hasLiveDemo } from '../templates/registry'
-import { CONTACT_EMAIL } from '../config'
+import InquiryModal from '../components/InquiryModal'
 
 export default function TemplateDetailPage() {
   const { id } = useParams<{ id: string }>()
   const template = templates.find((t) => t.id === id)
+  const [inquiryOpen, setInquiryOpen] = useState(false)
 
   if (!template) {
     return <Navigate to="/" replace />
   }
-
-  const inquiryMailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
-    `[청첩장 템플릿 문의] ${template.title}`,
-  )}&body=${encodeURIComponent(
-    `안녕하세요, "${template.title}" 템플릿으로 제작 문의드립니다.\n\n결혼식 날짜:\n예식장:\n연락처:`,
-  )}`
 
   const liveDemo = hasLiveDemo(template.id)
 
@@ -72,12 +68,13 @@ export default function TemplateDetailPage() {
           {template.price === 0 ? '무료' : `${template.price.toLocaleString()}원`}
         </p>
         <div className="flex gap-2">
-          <a
-            href={inquiryMailto}
+          <button
+            type="button"
+            onClick={() => setInquiryOpen(true)}
             className="flex-1 rounded-xl bg-neutral-900 py-3 text-center text-sm font-medium text-white transition hover:bg-neutral-800"
           >
             제작 문의하기
-          </a>
+          </button>
           {liveDemo && (
             <a
               href={`/preview/${template.id}`}
@@ -90,6 +87,10 @@ export default function TemplateDetailPage() {
           )}
         </div>
       </div>
+
+      {inquiryOpen && (
+        <InquiryModal templateTitle={template.title} onClose={() => setInquiryOpen(false)} />
+      )}
     </div>
   )
 }
