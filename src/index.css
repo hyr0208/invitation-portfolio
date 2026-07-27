@@ -33,6 +33,16 @@
   --color-rose-soft: #f0d2d9;
   --color-blossom-line: #ecc9d1;
 
+  /* retro-film template tokens */
+  --color-film-paper: #f1e9d8;
+  --color-film-paper-soft: #e7dabd;
+  --color-film-ink: #382d20;
+  --color-film-ink-soft: #7d6e56;
+  --color-film-ink-faint: #b3a284;
+  --color-film-orange: #c4501f;
+  --color-film-orange-dark: #963c17;
+  --color-film-line: #d3bf98;
+
   --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   --animate-fade-in: fade-in 0.25s ease-out forwards;
   --animate-scale-in: scale-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;

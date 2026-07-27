@@ -2,6 +2,7 @@ import type { Template } from '../types/template'
 import classicStoryThumb from '../templates/classic-story/assets/photos/cover-bg.jpg'
 import minimalMonoThumb from '../templates/minimal-mono/assets/photos/cover-bg.jpg'
 import romanticBlossomThumb from '../templates/romantic-blossom/assets/photos/cover-bg.jpg'
+import retroFilmThumb from '../templates/retro-film/assets/photos/cover-bg.jpg'
 
 export const templates: Template[] = [
   /*
@@ -125,6 +126,20 @@ export const templates: Template[] = [
     isNew: true,
     price: 18000,
   },
+  */
+  {
+    id: 'retro-film',
+    title: '레트로 필름 다이어리',
+    category: 'unique',
+    description:
+      '필름 카메라 그레인과 폴라로이드 감성을 담은 다이어리형 청첩장. 갤러리를 먼저 보여주고 예식 정보를 한 장의 슬레이트로 모은 구성이 특징인 실제 컴포넌트 라이브 데모입니다.',
+    colorFrom: '#f1e9d8',
+    colorTo: '#c4501f',
+    thumbnail: retroFilmThumb,
+    isNew: true,
+    price: 0,
+  },
+  /*
   {
     id: 'photo-01',
     title: '풀스크린 포토',
