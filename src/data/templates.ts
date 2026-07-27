@@ -4,6 +4,7 @@ import minimalMonoThumb from '../templates/minimal-mono/assets/photos/cover-bg.j
 import romanticBlossomThumb from '../templates/romantic-blossom/assets/photos/cover-bg.jpg'
 
 export const templates: Template[] = [
+  /*
   {
     id: 'minimal-01',
     title: '심플 화이트',
@@ -24,6 +25,7 @@ export const templates: Template[] = [
     isNew: true,
     price: 9900,
   },
+  */
   {
     id: 'minimal-mono',
     title: '미니멀 모노톤',
@@ -37,6 +39,7 @@ export const templates: Template[] = [
     isNew: true,
     price: 0,
   },
+  /*
   {
     id: 'classic-01',
     title: '엘레강스 골드',
@@ -56,6 +59,7 @@ export const templates: Template[] = [
     isPopular: true,
     price: 15000,
   },
+  */
   {
     id: 'classic-story',
     title: '클래식 스토리',
@@ -68,6 +72,7 @@ export const templates: Template[] = [
     isPopular: true,
     price: 0,
   },
+  /*
   {
     id: 'romantic-01',
     title: '핑크 블라썸',
@@ -87,6 +92,7 @@ export const templates: Template[] = [
     colorTo: '#c4b5fd',
     price: 12000,
   },
+  */
   {
     id: 'romantic-blossom',
     title: '핑크 블라썸 스토리',
@@ -99,6 +105,7 @@ export const templates: Template[] = [
     isNew: true,
     price: 0,
   },
+  /*
   {
     id: 'unique-01',
     title: '레트로 필름',
@@ -137,4 +144,5 @@ export const templates: Template[] = [
     colorTo: '#f87171',
     price: 12000,
   },
+  */
 ]
