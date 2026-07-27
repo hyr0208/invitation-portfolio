@@ -1,6 +1,7 @@
 import type { Template } from '../types/template'
 import classicStoryThumb from '../templates/classic-story/assets/photos/cover-bg.jpg'
 import minimalMonoThumb from '../templates/minimal-mono/assets/photos/cover-bg.jpg'
+import romanticBlossomThumb from '../templates/romantic-blossom/assets/photos/cover-bg.jpg'
 
 export const templates: Template[] = [
   {
@@ -85,6 +86,18 @@ export const templates: Template[] = [
     colorFrom: '#e9d5ff',
     colorTo: '#c4b5fd',
     price: 12000,
+  },
+  {
+    id: 'romantic-blossom',
+    title: '핑크 블라썸 스토리',
+    category: 'romantic',
+    description:
+      '벚꽃이 흩날리는 봄날의 무드를 담은 블러쉬 핑크 톤의 로맨틱한 청첩장. 실제 컴포넌트로 만들어진 라이브 데모입니다.',
+    colorFrom: '#fdedf0',
+    colorTo: '#e1728c',
+    thumbnail: romanticBlossomThumb,
+    isNew: true,
+    price: 0,
   },
   {
     id: 'unique-01',

@@ -21,6 +21,18 @@
   --font-serif-kr: 'Noto Serif KR', serif;
   --font-serif-en: 'Cormorant Garamond', serif;
 
+  /* romantic-blossom template tokens */
+  --color-blossom: #fdf6f7;
+  --color-blossom-soft: #f6e5e8;
+  --color-blossom-deep: #ecccd3;
+  --color-rose-ink: #332323;
+  --color-rose-ink-soft: #83686c;
+  --color-rose-ink-faint: #c2a1a7;
+  --color-rose: #c34f6c;
+  --color-rose-dark: #9c3752;
+  --color-rose-soft: #f0d2d9;
+  --color-blossom-line: #ecc9d1;
+
   --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   --animate-fade-in: fade-in 0.25s ease-out forwards;
   --animate-scale-in: scale-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
