@@ -82,3 +82,12 @@
 body {
   @apply bg-stone-50 text-neutral-800 antialiased;
 }
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

@@ -37,6 +37,11 @@ export function Cover({ data }: CoverProps) {
           {data.weddingTimeLabel} · {data.venueName} {data.venueHall}
         </p>
       </div>
+
+      <div className="relative mt-10 flex flex-col items-center gap-1 text-white/60">
+        <span className="animate-bounce text-lg leading-none">⌄</span>
+        <span className="text-[10px] tracking-[0.3em] uppercase">Scroll</span>
+      </div>
     </section>
   )
 }
