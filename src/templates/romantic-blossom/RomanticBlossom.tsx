@@ -9,12 +9,16 @@ import { Gallery } from './components/Gallery'
 import { Location } from './components/Location'
 import { Account } from './components/Account'
 import { ShareFooter } from './components/ShareFooter'
+import { MusicPlayer } from '../../components/invitation/MusicPlayer'
+import { Guestbook } from '../../components/invitation/Guestbook'
+import { getInvitationFeatures } from '../../components/invitation/InvitationOptions'
 
 interface RomanticBlossomProps {
   data?: InvitationData
 }
 
 export default function RomanticBlossom({ data = sampleInvitation }: RomanticBlossomProps) {
+  const features = getInvitationFeatures()
   return (
     <div className="min-h-screen bg-blossom-deep py-0 sm:py-10">
       <div className="mx-auto min-h-svh w-full max-w-[430px] bg-blossom shadow-none sm:min-h-0 sm:shadow-xl">
@@ -26,8 +30,10 @@ export default function RomanticBlossom({ data = sampleInvitation }: RomanticBlo
         <Gallery />
         <Location data={data} />
         <Account data={data} />
+        <Guestbook features={features} invitationId="romantic-blossom" />
         <ShareFooter data={data} />
       </div>
+      <MusicPlayer features={features} />
     </div>
   )
 }

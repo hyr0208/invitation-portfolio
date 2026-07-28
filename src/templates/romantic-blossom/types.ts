@@ -22,6 +22,7 @@ export interface AccountInfo {
 }
 
 export interface InvitationData {
+  features?: InvitationFeatures
   groom: PersonInfo
   bride: PersonInfo
   weddingDateISO: string
@@ -34,3 +35,4 @@ export interface InvitationData {
   greeting: string[]
   accounts: AccountInfo[]
 }
+import type { InvitationFeatures } from '../../types/invitation'

@@ -1,8 +1,10 @@
-import { Suspense, useEffect } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import { templateComponents } from '../templates/registry'
+import { InvitationOptions } from '../components/invitation/InvitationOptions'
 
 export default function PreviewPage() {
+  const [, refresh] = useState(0)
   const { id } = useParams<{ id: string }>()
   const TemplateComponent = id ? templateComponents[id] : undefined
 
@@ -16,8 +18,11 @@ export default function PreviewPage() {
   }
 
   return (
-    <Suspense fallback={null}>
+    <>
+      <InvitationOptions onChange={() => refresh((value) => value + 1)} />
+      <Suspense fallback={null}>
       <TemplateComponent />
-    </Suspense>
+      </Suspense>
+    </>
   )
 }
