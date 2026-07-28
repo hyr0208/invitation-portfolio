@@ -43,6 +43,17 @@
   --color-film-orange-dark: #963c17;
   --color-film-line: #d3bf98;
 
+  /* photo-story template tokens */
+  --color-gallery: #fafaf8;
+  --color-gallery-soft: #f1efe8;
+  --color-gallery-deep: #e3e0d5;
+  --color-gallery-ink: #14181f;
+  --color-gallery-ink-soft: #5c6270;
+  --color-gallery-ink-faint: #9aa0ac;
+  --color-gallery-navy: #24405f;
+  --color-gallery-navy-dark: #182c44;
+  --color-gallery-line: #e2ded2;
+
   --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   --animate-fade-in: fade-in 0.25s ease-out forwards;
   --animate-scale-in: scale-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;

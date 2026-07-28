@@ -3,6 +3,7 @@ import classicStoryThumb from '../templates/classic-story/assets/photos/cover-bg
 import minimalMonoThumb from '../templates/minimal-mono/assets/photos/cover-bg.jpg'
 import romanticBlossomThumb from '../templates/romantic-blossom/assets/photos/cover-bg.jpg'
 import retroFilmThumb from '../templates/retro-film/assets/photos/cover-bg.jpg'
+import photoStoryThumb from '../templates/photo-story/assets/photos/cover-bg.jpg'
 
 export const templates: Template[] = [
   /*
@@ -160,4 +161,16 @@ export const templates: Template[] = [
     price: 12000,
   },
   */
+  {
+    id: 'photo-story',
+    title: '포토 스토리',
+    category: 'photo',
+    description:
+      '화이트 갤러리 벽에 사진을 걸어둔 듯한 여백 중심의 포토 중심 청첩장. 그리드 없이 사진을 세로로 이어붙인 스토리형 구성이 특징인 실제 컴포넌트 라이브 데모입니다.',
+    colorFrom: '#fafaf8',
+    colorTo: '#24405f',
+    thumbnail: photoStoryThumb,
+    isNew: true,
+    price: 0,
+  },
 ]
