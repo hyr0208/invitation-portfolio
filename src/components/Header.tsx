@@ -6,7 +6,7 @@ export default function Header() {
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
         <Link
           to="/"
-          className="font-serif text-xl tracking-wide text-neutral-900"
+          className="block font-serif text-xl leading-none tracking-wide text-neutral-900"
         >
           청첩장갤러리
         </Link>
