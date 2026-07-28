@@ -56,6 +56,18 @@
   --color-gallery-navy-dark: #182c44;
   --color-gallery-line: #e2ded2;
 
+  /* garden-editorial template tokens */
+  --color-garden: #f8f5ed;
+  --color-garden-soft: #e7eee2;
+  --color-garden-deep: #d7e1d1;
+  --color-garden-ink: #263d31;
+  --color-garden-ink-dark: #17241c;
+  --color-garden-ink-soft: #536557;
+  --color-garden-ink-faint: #718074;
+  --color-garden-sage: #b9c9b3;
+  --color-garden-sage-light: #c5d5bd;
+  --color-garden-tan: #9b765b;
+
   --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   --animate-fade-in: fade-in 0.25s ease-out forwards;
   --animate-scale-in: scale-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;

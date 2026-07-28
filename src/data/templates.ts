@@ -4,6 +4,7 @@ import minimalMonoThumb from '../templates/minimal-mono/assets/photos/cover-bg.j
 import romanticBlossomThumb from '../templates/romantic-blossom/assets/photos/cover-bg.jpg'
 import retroFilmThumb from '../templates/retro-film/assets/photos/cover-bg.jpg'
 import photoStoryThumb from '../templates/photo-story/assets/photos/cover-bg.jpg'
+import gardenEditorialThumb from '../templates/garden-editorial/assets/photos/cover-bg.jpg'
 
 export const templates: Template[] = [
   /*
@@ -170,6 +171,18 @@ export const templates: Template[] = [
     colorFrom: '#fafaf8',
     colorTo: '#24405f',
     thumbnail: photoStoryThumb,
+    isNew: true,
+    price: 0,
+  },
+  {
+    id: 'garden-editorial',
+    title: '가든 에디토리얼',
+    category: 'romantic',
+    description:
+      '짙은 포레스트 그린과 식물원 에디토리얼 무드로 완성한 차분한 가든 웨딩 청첩장. 여백과 큰 타이포그래피로 두 사람의 이야기를 담았습니다. 실제 컴포넌트로 만들어진 라이브 데모입니다.',
+    colorFrom: '#304b3b',
+    colorTo: '#dce8d7',
+    thumbnail: gardenEditorialThumb,
     isNew: true,
     price: 0,
   },
