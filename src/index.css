@@ -3,7 +3,9 @@
 @theme {
   --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
     'Malgun Gothic', sans-serif;
-  --font-serif: ui-serif, Georgia, 'Times New Roman', serif;
+  --font-serif: 'Noto Serif KR', 'Apple SD Gothic Neo', 'Malgun Gothic', Georgia,
+    'Times New Roman', serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace;
 
   /* classic-story template tokens */
   --color-cream: #fbf6ef;
@@ -18,8 +20,8 @@
   --color-sage: #8a9a80;
   --color-line: #e4d9c8;
 
-  --font-serif-kr: 'Noto Serif KR', serif;
-  --font-serif-en: 'Cormorant Garamond', serif;
+  --font-serif-kr: 'Noto Serif KR', 'Apple SD Gothic Neo', 'Malgun Gothic', Georgia, serif;
+  --font-serif-en: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
 
   /* romantic-blossom template tokens */
   --color-blossom: #fdf6f7;
@@ -92,6 +94,14 @@
 
 body {
   @apply bg-stone-50 text-neutral-800 antialiased;
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* Keep the same metrics when a browser is still loading a webfont. */
+html {
+  font-size: 16px;
 }
 
 .hide-scrollbar {
