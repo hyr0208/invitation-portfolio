@@ -21,7 +21,13 @@ export function ShareFooter({ data }: ShareFooterProps) {
   return (
     <footer className="text-center">
       <div className="relative aspect-video w-full overflow-hidden">
-        <img src={closingPhoto} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <img
+          src={closingPhoto}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-linear-to-b from-rose-ink/50 via-rose-ink/20 to-rose-ink/70" />
         <div className="absolute inset-0 flex flex-col items-center justify-center px-6">
           <p className="font-serif-kr text-[15px] leading-relaxed text-blossom">

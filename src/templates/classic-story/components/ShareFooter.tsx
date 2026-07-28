@@ -20,7 +20,13 @@ export function ShareFooter({ data }: ShareFooterProps) {
 
   return (
     <footer className="relative overflow-hidden px-6 py-20 text-center">
-      <img src={closingPhoto} alt="" className="absolute inset-0 h-full w-full object-cover" />
+      <img
+        src={closingPhoto}
+        alt=""
+        loading="lazy"
+        decoding="async"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
       <div className="absolute inset-0 bg-linear-to-b from-ink/70 via-ink/55 to-ink/80" />
 
       <div className="relative">

@@ -43,6 +43,8 @@ export function Gallery() {
               <img
                 src={photo}
                 alt=""
+                loading="lazy"
+                decoding="async"
                 className="h-full w-full object-cover filter-[sepia(0.3)_saturate(0.8)_contrast(1.05)]"
               />
             </span>

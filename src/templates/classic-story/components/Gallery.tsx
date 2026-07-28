@@ -29,7 +29,13 @@ export function Gallery() {
             onClick={() => setActive(i)}
             className="aspect-3/4 overflow-hidden transition-transform active:scale-95"
           >
-            <img src={photo} alt="" className="h-full w-full object-cover" />
+            <img
+              src={photo}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              className="h-full w-full object-cover"
+            />
           </button>
         ))}
       </div>

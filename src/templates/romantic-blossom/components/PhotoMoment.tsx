@@ -16,7 +16,13 @@ export function PhotoMoment({ caption }: PhotoMomentProps) {
       }`}
     >
       <div className="aspect-4/5 w-full overflow-hidden">
-        <img src={momentPhoto} alt="" className="h-full w-full object-cover" />
+        <img
+          src={momentPhoto}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          className="h-full w-full object-cover"
+        />
       </div>
       <p className="py-5 text-center text-[11px] tracking-[0.25em] text-rose-ink-faint uppercase">
         {caption}

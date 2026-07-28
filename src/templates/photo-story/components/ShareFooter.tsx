@@ -21,7 +21,13 @@ export function ShareFooter({ data }: ShareFooterProps) {
   return (
     <footer>
       <div className="relative aspect-4/5 w-full overflow-hidden">
-        <img src={closingPhoto} alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <img
+          src={closingPhoto}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-linear-to-t from-gallery-navy-dark/75 via-gallery-navy-dark/10 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 px-8 py-10">
           <p className="text-[15px] leading-relaxed text-gallery">

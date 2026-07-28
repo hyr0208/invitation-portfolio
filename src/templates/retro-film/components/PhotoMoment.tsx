@@ -19,6 +19,8 @@ export function PhotoMoment({ frame }: PhotoMomentProps) {
         <img
           src={momentPhoto}
           alt=""
+          loading="lazy"
+          decoding="async"
           className="h-full w-full object-cover filter-[sepia(0.3)_saturate(0.8)_contrast(1.05)]"
         />
         <span className="absolute top-3 left-3 border border-film-paper/70 px-1.5 py-0.5 font-mono text-[10px] tracking-widest text-film-paper uppercase">

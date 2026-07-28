@@ -20,7 +20,13 @@ export function PhotoStory() {
         {PHOTOS.map((photo, i) => (
           <figure key={photo.src}>
             <div className={`w-full overflow-hidden ${photo.aspect}`}>
-              <img src={photo.src} alt="" className="h-full w-full object-cover" />
+              <img
+                src={photo.src}
+                alt=""
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover"
+              />
             </div>
             <figcaption className="mt-3 text-[11px] tracking-[0.2em] text-gallery-ink-faint uppercase">
               Photo {String(i + 1).padStart(2, '0')} — {photo.caption}

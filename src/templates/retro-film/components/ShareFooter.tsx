@@ -24,6 +24,8 @@ export function ShareFooter({ data }: ShareFooterProps) {
         <img
           src={closingPhoto}
           alt=""
+          loading="lazy"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover filter-[sepia(0.3)_saturate(0.8)_contrast(1.05)]"
         />
         <div className="absolute inset-0 bg-film-ink/55" />
