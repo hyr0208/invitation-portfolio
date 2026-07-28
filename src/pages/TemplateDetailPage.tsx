@@ -71,7 +71,7 @@ export default function TemplateDetailPage() {
           <button
             type="button"
             onClick={() => setInquiryOpen(true)}
-            className="flex-1 rounded-xl bg-neutral-900 py-3 text-center text-sm font-medium text-white transition hover:bg-neutral-800"
+            className="flex-1 rounded-xl bg-[#304b3b] py-3 text-center text-sm font-medium text-white transition hover:bg-[#263d31]"
           >
             제작 문의하기
           </button>
@@ -80,7 +80,7 @@ export default function TemplateDetailPage() {
               href={`/preview/${template.id}`}
               target="_blank"
               rel="noreferrer"
-              className="flex-1 rounded-xl border border-stone-300 py-3 text-center text-sm font-medium text-neutral-700 transition hover:border-neutral-400"
+              className="flex-1 rounded-xl border border-[#b9c9b3] py-3 text-center text-sm font-medium text-[#304b3b] transition hover:border-[#304b3b] hover:bg-[#f1f6ee]"
             >
               새 탭에서 크게 보기
             </a>

@@ -55,7 +55,7 @@ export default function InquiryModal({ templateTitle, onClose }: InquiryModalPro
             <button
               type="button"
               onClick={onClose}
-              className="mt-2 w-full rounded-xl bg-neutral-900 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800"
+              className="mt-2 w-full rounded-xl bg-[#304b3b] py-2.5 text-sm font-medium text-white transition hover:bg-[#263d31]"
             >
               닫기
             </button>
@@ -136,14 +136,14 @@ export default function InquiryModal({ templateTitle, onClose }: InquiryModalPro
               <button
                 type="button"
                 onClick={onClose}
-                className="flex-1 rounded-xl border border-stone-300 py-2.5 text-sm font-medium text-neutral-700 transition hover:border-neutral-400"
+                className="flex-1 rounded-xl border border-[#b9c9b3] py-2.5 text-sm font-medium text-[#304b3b] transition hover:border-[#304b3b] hover:bg-[#f1f6ee]"
               >
                 취소
               </button>
               <button
                 type="submit"
                 disabled={status === 'sending'}
-                className="flex-1 rounded-xl bg-neutral-900 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-800 disabled:opacity-60"
+                className="flex-1 rounded-xl bg-[#304b3b] py-2.5 text-sm font-medium text-white transition hover:bg-[#263d31] disabled:opacity-60"
               >
                 {status === 'sending' ? '전송 중...' : '문의 보내기'}
               </button>
