@@ -5,6 +5,7 @@ import romanticBlossomThumb from '../templates/romantic-blossom/assets/photos/co
 import retroFilmThumb from '../templates/retro-film/assets/photos/cover-bg.jpg'
 import photoStoryThumb from '../templates/photo-story/assets/photos/cover-bg.jpg'
 import gardenEditorialThumb from '../templates/garden-editorial/assets/photos/cover-bg.jpg'
+import pastelSpringThumb from '../templates/minimal-mono/assets/photos/cover-bg.jpg'
 
 export const templates: Template[] = [
   /*
@@ -183,6 +184,18 @@ export const templates: Template[] = [
     colorFrom: '#304b3b',
     colorTo: '#dce8d7',
     thumbnail: gardenEditorialThumb,
+    isNew: true,
+    price: 0,
+  },
+  {
+    id: 'pastel-spring',
+    title: '파스텔 스프링',
+    category: 'romantic',
+    description:
+      '민트빛 아이보리 톤과 블러쉬 핑크, 버터 옐로우 포인트가 어우러진 봄날 무드의 청첩장. 둥글게 감싼 프레임과 부드러운 컬러감이 특징인 실제 컴포넌트 라이브 데모입니다.',
+    colorFrom: '#eef1e3',
+    colorTo: '#ecb8c2',
+    thumbnail: pastelSpringThumb,
     isNew: true,
     price: 0,
   },

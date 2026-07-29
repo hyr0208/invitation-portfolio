@@ -68,6 +68,18 @@
   --color-garden-sage-light: #c5d5bd;
   --color-garden-tan: #9b765b;
 
+  /* pastel-spring template tokens */
+  --color-spring: #fbf8f1;
+  --color-spring-soft: #eef1e3;
+  --color-spring-deep: #d8e4cf;
+  --color-spring-ink: #3c4034;
+  --color-spring-ink-soft: #7d8570;
+  --color-spring-ink-faint: #aab29c;
+  --color-spring-blossom: #ecb8c2;
+  --color-spring-blossom-dark: #cc7c8d;
+  --color-spring-yellow: #f2d879;
+  --color-spring-line: #e3e6d6;
+
   --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   --animate-fade-in: fade-in 0.25s ease-out forwards;
   --animate-scale-in: scale-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
