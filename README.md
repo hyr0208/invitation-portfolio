@@ -49,6 +49,7 @@ npm run dev
 | `photo-story` | 포토 스토리 | 포토 | 화이트 갤러리 벽에 사진을 건 듯한 여백 중심의 포토 구성 |
 | `garden-editorial` | 가든 에디토리얼 | 로맨틱 | 짙은 포레스트 그린과 식물원 에디토리얼 무드 |
 | `pastel-spring` | 파스텔 스프링 | 로맨틱 | 민트빛 아이보리 + 블러쉬 핑크 + 버터 옐로우의 봄날 무드 |
+| `midnight-gold` | 미드나잇 골드 | 유니크 | 깊은 미드나잇 네이비 + 골드 포인트의 포멀한 밤 웨딩 무드 |
 
 각 템플릿 폴더는 `{TemplateName}.tsx`, `assets/`, `components/`, `hooks/`, `utils/`, `sampleData.ts`, `types.ts` 구조를 공통으로 따릅니다.
 

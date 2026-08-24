@@ -8,6 +8,7 @@ export const templateComponents: Record<string, ReturnType<typeof lazy>> = {
   'photo-story': lazy(() => import('./photo-story/PhotoStoryTemplate')),
   'garden-editorial': lazy(() => import('./garden-editorial/GardenEditorial')),
   'pastel-spring': lazy(() => import('./pastel-spring/PastelSpring')),
+  'midnight-gold': lazy(() => import('./midnight-gold/MidnightGold')),
 }
 
 export function hasLiveDemo(id: string): boolean {

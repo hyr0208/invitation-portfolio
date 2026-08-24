@@ -6,6 +6,7 @@ import retroFilmThumb from '../templates/retro-film/assets/photos/cover-bg.jpg'
 import photoStoryThumb from '../templates/photo-story/assets/photos/cover-bg.jpg'
 import gardenEditorialThumb from '../templates/garden-editorial/assets/photos/cover-bg.jpg'
 import pastelSpringThumb from '../templates/minimal-mono/assets/photos/cover-bg.jpg'
+import midnightGoldThumb from '../templates/midnight-gold/assets/photos/cover-bg.jpg'
 
 export const templates: Template[] = [
   /*
@@ -196,6 +197,19 @@ export const templates: Template[] = [
     colorFrom: '#eef1e3',
     colorTo: '#ecb8c2',
     thumbnail: pastelSpringThumb,
+    isNew: true,
+    price: 0,
+  },
+  {
+    id: 'midnight-gold',
+    title: '미드나잇 골드',
+    category: 'unique',
+    description:
+      '깊은 미드나잇 네이비와 골드 포인트로 완성한 포멀한 밤 웨딩 청첩장. 부모님 연락처, 사진 라이트박스 갤러리까지 담은 실제 컴포넌트로 만들어진 라이브 데모입니다.',
+    colorFrom: '#12162a',
+    colorTo: '#cba135',
+    thumbnail: midnightGoldThumb,
+    thumbnailFilter: 'grayscale(0.4) contrast(1.1) brightness(0.75)',
     isNew: true,
     price: 0,
   },

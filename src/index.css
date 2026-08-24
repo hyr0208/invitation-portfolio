@@ -80,6 +80,18 @@
   --color-spring-yellow: #f2d879;
   --color-spring-line: #e3e6d6;
 
+  /* midnight-gold template tokens */
+  --color-midnight: #12162a;
+  --color-midnight-soft: #1a2036;
+  --color-midnight-deep: #05070f;
+  --color-midnight-ink: #f3ecd8;
+  --color-midnight-ink-soft: #b7ae95;
+  --color-midnight-ink-faint: #6d6656;
+  --color-gold: #cba135;
+  --color-gold-dark: #9c7a1f;
+  --color-gold-soft: #e8d9a8;
+  --color-midnight-line: #2c3350;
+
   --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   --animate-fade-in: fade-in 0.25s ease-out forwards;
   --animate-scale-in: scale-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
