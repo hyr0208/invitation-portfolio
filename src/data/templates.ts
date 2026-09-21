@@ -7,6 +7,7 @@ import photoStoryThumb from '../templates/photo-story/assets/photos/cover-bg.jpg
 import gardenEditorialThumb from '../templates/garden-editorial/assets/photos/cover-bg.jpg'
 import pastelSpringThumb from '../templates/minimal-mono/assets/photos/cover-bg.jpg'
 import midnightGoldThumb from '../templates/midnight-gold/assets/photos/cover-bg.jpg'
+import devTerminalThumb from '../templates/dev-terminal/assets/photos/cover-bg.jpg'
 
 export const templates: Template[] = [
   /*
@@ -210,6 +211,19 @@ export const templates: Template[] = [
     colorTo: '#cba135',
     thumbnail: midnightGoldThumb,
     thumbnailFilter: 'grayscale(0.4) contrast(1.1) brightness(0.75)',
+    isNew: true,
+    price: 0,
+  },
+  {
+    id: 'dev-terminal',
+    title: '데브 터미널',
+    category: 'unique',
+    description:
+      '터미널과 코드 에디터 감성을 담은 개발자를 위한 청첩장. 커밋 로그, JSON, .env 파일 같은 요소로 두 사람의 이야기를 담았습니다. 실제 컴포넌트로 만들어진 라이브 데모입니다.',
+    colorFrom: '#1e1e1e',
+    colorTo: '#4ec9a0',
+    thumbnail: devTerminalThumb,
+    thumbnailFilter: 'grayscale(0.5) contrast(1.1) brightness(0.7)',
     isNew: true,
     price: 0,
   },

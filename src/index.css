@@ -92,6 +92,22 @@
   --color-gold-soft: #e8d9a8;
   --color-midnight-line: #2c3350;
 
+  /* dev-terminal template tokens */
+  --color-dev-bg: #1e1e1e;
+  --color-dev-bg-soft: #252526;
+  --color-dev-bg-deep: #101010;
+  --color-dev-text: #d4d4d4;
+  --color-dev-text-soft: #8a8a8a;
+  --color-dev-text-faint: #5a5a5a;
+  --color-dev-green: #4ec9a0;
+  --color-dev-green-dark: #379e7d;
+  --color-dev-green-soft: #b7e6d4;
+  --color-dev-blue: #569cd6;
+  --color-dev-orange: #ce9178;
+  --color-dev-yellow: #dcdcaa;
+  --color-dev-purple: #c586c0;
+  --color-dev-line: #333333;
+
   --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   --animate-fade-in: fade-in 0.25s ease-out forwards;
   --animate-scale-in: scale-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
