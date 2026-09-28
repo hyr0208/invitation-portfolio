@@ -6,6 +6,30 @@ interface CoverProps {
   data: InvitationData
 }
 
+function WriteInText({
+  text,
+  charDelay = 0.06,
+  startDelay = 0.3,
+}: {
+  text: string
+  charDelay?: number
+  startDelay?: number
+}) {
+  return (
+    <span className="inline-block whitespace-pre">
+      {text.split('').map((char, i) => (
+        <span
+          key={i}
+          className="animate-fade-up inline-block opacity-0"
+          style={{ animationDelay: `${startDelay + i * charDelay}s` }}
+        >
+          {char}
+        </span>
+      ))}
+    </span>
+  )
+}
+
 const FALLING_HEARTS = [
   { left: '6%', size: 20, tilt: -10, fallDuration: 13, fallDelay: -3, swayDuration: 4.5, swayDelay: -1 },
   { left: '18%', size: 16, tilt: 15, fallDuration: 10, fallDelay: -6, swayDuration: 3.5, swayDelay: -2 },
@@ -27,7 +51,9 @@ export function Cover({ data }: CoverProps) {
       </div>
 
       <div className="relative px-6 pt-8 pb-12 text-center">
-        <p className="font-hand text-6xl leading-none text-diary-burgundy">Our Wedding Day</p>
+        <p className="font-hand text-6xl leading-none text-diary-burgundy">
+          <WriteInText text="Our Wedding Day" />
+        </p>
         <p className="mt-4 text-base text-diary-ink">
           {data.groom.name} · {data.bride.name}
         </p>
