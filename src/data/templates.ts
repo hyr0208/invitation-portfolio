@@ -8,6 +8,7 @@ import gardenEditorialThumb from '../templates/garden-editorial/assets/photos/co
 import pastelSpringThumb from '../templates/minimal-mono/assets/photos/cover-bg.jpg'
 import midnightGoldThumb from '../templates/midnight-gold/assets/photos/cover-bg.jpg'
 import devTerminalThumb from '../templates/dev-terminal/assets/photos/cover-bg.jpg'
+import paperDiaryThumb from '../templates/romantic-blossom/assets/photos/cover-bg.jpg'
 
 export const templates: Template[] = [
   /*
@@ -224,6 +225,18 @@ export const templates: Template[] = [
     colorTo: '#4ec9a0',
     thumbnail: devTerminalThumb,
     thumbnailFilter: 'grayscale(0.5) contrast(1.1) brightness(0.7)',
+    isNew: true,
+    price: 0,
+  },
+  {
+    id: 'paper-diary',
+    title: '페이퍼 다이어리',
+    category: 'unique',
+    description:
+      '와인빛 벨벳과 크림 종이, 손글씨 감성을 담은 스크랩북 다이어리풍 청첩장. 하트 스티커, 우표형 갤러리, 왁스 실링 카드, 실시간 카운트다운까지 담은 실제 컴포넌트 라이브 데모입니다.',
+    colorFrom: '#f6ecda',
+    colorTo: '#5c1926',
+    thumbnail: paperDiaryThumb,
     isNew: true,
     price: 0,
   },
