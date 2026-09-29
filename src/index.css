@@ -7,6 +7,8 @@
     'Times New Roman', serif;
   --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', 'Courier New', monospace;
   --font-hand: 'Caveat', 'Nanum Pen Script', cursive;
+  --font-script: 'Great Vibes', 'Caveat', cursive;
+  --font-pen: 'Nanum Pen Script', 'Caveat', cursive;
 
   /* classic-story template tokens */
   --color-cream: #fbf6ef;
@@ -121,6 +123,18 @@
   --color-diary-burgundy-soft: #8a3548;
   --color-diary-line: #ddc79e;
 
+  /* green-field template tokens */
+  --color-field-forest: #2f3b2a;
+  --color-field-forest-dark: #1d2519;
+  --color-field-olive: #56663f;
+  --color-field-sage: #a9b59a;
+  --color-field-ivory: #f6f4ec;
+  --color-field-ivory-soft: #fdfcf7;
+  --color-field-ink: #1f231c;
+  --color-field-ink-soft: #5d6356;
+  --color-field-ink-faint: #a3a797;
+  --color-field-line: #dedbcb;
+
   --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   --animate-fade-in: fade-in 0.25s ease-out forwards;
   --animate-scale-in: scale-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
@@ -201,6 +215,36 @@ html {
   }
   50% {
     transform: translateX(14px);
+  }
+}
+
+@keyframes script-write {
+  from {
+    clip-path: inset(-20% 100% -20% 0);
+  }
+  to {
+    clip-path: inset(-20% -5% -20% 0);
+  }
+}
+
+@keyframes sparkle-twinkle {
+  0%,
+  100% {
+    transform: scale(0.6) rotate(0deg);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1) rotate(20deg);
+    opacity: 1;
+  }
+}
+
+@keyframes film-roll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
   }
 }
 

@@ -9,6 +9,7 @@ import pastelSpringThumb from '../templates/minimal-mono/assets/photos/cover-bg.
 import midnightGoldThumb from '../templates/midnight-gold/assets/photos/cover-bg.jpg'
 import devTerminalThumb from '../templates/dev-terminal/assets/photos/cover-bg.jpg'
 import paperDiaryThumb from '../templates/romantic-blossom/assets/photos/cover-bg.jpg'
+import greenFieldThumb from '../templates/garden-editorial/assets/photos/gallery-1.jpg'
 
 export const templates: Template[] = [
   /*
@@ -237,6 +238,18 @@ export const templates: Template[] = [
     colorFrom: '#f6ecda',
     colorTo: '#5c1926',
     thumbnail: paperDiaryThumb,
+    isNew: true,
+    price: 0,
+  },
+  {
+    id: 'green-field',
+    title: '그린 필드',
+    category: 'photo',
+    description:
+      '초록 들판 위 풀스크린 사진에 흰 캘리그라피가 손글씨처럼 써지는 포토 중심 청첩장. 흑백 필름 스트립, 반짝이는 두들 장식, 하트 캘린더까지 담은 실제 컴포넌트 라이브 데모입니다.',
+    colorFrom: '#f6f4ec',
+    colorTo: '#2f3b2a',
+    thumbnail: greenFieldThumb,
     isNew: true,
     price: 0,
   },
