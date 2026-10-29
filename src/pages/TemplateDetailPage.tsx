@@ -18,6 +18,9 @@ export default function TemplateDetailPage() {
 
   return (
     <div className="grid gap-8 md:grid-cols-2 md:items-start">
+      <title>{`${template.title} 모바일 청첩장 템플릿 | 청첩장갤러리`}</title>
+      <meta name="description" content={template.description} />
+      <link rel="canonical" href={`https://invite.yyyerin.co.kr/templates/${template.id}`} />
       <div className="mx-auto w-full max-w-xs">
         <div className="rounded-[2.5rem] border-8 border-neutral-900 bg-neutral-900 shadow-xl">
           <div className="aspect-9/19 overflow-hidden rounded-[1.75rem] bg-white">

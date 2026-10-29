@@ -17,6 +17,7 @@ export default function GalleryPage() {
 
   return (
     <div className="space-y-8">
+      <link rel="canonical" href="https://invite.yyyerin.co.kr/" />
       <nav
         className="mx-auto flex w-fit rounded-full border border-stone-200 bg-white p-1 text-sm shadow-sm"
         aria-label="페이지 메뉴"

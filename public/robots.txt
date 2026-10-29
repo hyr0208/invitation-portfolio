@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /preview/
+
+Sitemap: https://invite.yyyerin.co.kr/sitemap.xml
